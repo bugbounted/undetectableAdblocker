@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../assets/styles.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="header">
+      <img src="../images/logo.png">
+    </div>
+    <hr>
+
+    <div class="buttonArea">
+      <h2>Block ads</h2>
+      <div class="buttonContainer">
+        <input type="checkbox" id="sliderOne" />
+        <label class="slider" for="sliderOne"></label>
+      </div>
+    </div>
+    <hr>
+
+    <div id="whiteListMeNow" class="buttonArea">
+      <h2>Whitelist this domain</h2>
+      <div class="buttonContainer">
+        <input type="checkbox" id="whitelistMe" />
+        <label class="slider whitelist" for="whitelistMe"></label>
+      </div>
+    </div>
+    <hr>
+
+    <div id="footer">
+      <h4><a href="#" id="whitelistedDomainsPage"> See all whitelisted websites</a></h4>
+      <hr />
+      <h4>Not blocking properly? Click <a id="issueText" href="#">here</a><span id="issueNotice">&nbsp We're on it!;)</span></h4>
+      <h4><span id="adsBlocked"></span></h4>
+    </div>
+
+  </div>
+</body>
+<script src="../assets/jquery.js"></script>
+<script src="../blocker/email.js"></script>
+<script src="../blocker/popup.js"></script>
+
+</html>

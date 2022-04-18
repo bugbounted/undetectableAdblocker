@@ -1,0 +1,29 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "Undetectable AdBlocker",
+  "version": "5.1",
+  "description": "This adblocker blocks ads on youtube, forbes, businessinsider and many other websites while remaining undetected.",
+  "permissions": ["webRequest", "webRequestBlocking", "http://*/", "https://*/", "tabs", "storage", "webNavigation"],
+  "background": {
+    "scripts": ["blocker/adList.js", "blocker/background.js"],
+    "persistent": true
+  },
+  "manifest_version": 2,
+  "icons": { 
+    "128": "images/128.png",
+    "48": "images/48.png",
+    "16": "images/16.png" 
+  },
+  "browser_action": {
+    "default_title": "I'm Undetectable. I think...",
+    "default_popup": "static/popup.html"
+  },
+  "web_accessible_resources": [
+    "images/transparent.gif"
+  ],
+  "options_ui": {
+    "page": "static/options.html",
+    "open_in_tab": false
+  }
+}

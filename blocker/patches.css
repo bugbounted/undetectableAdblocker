@@ -1,0 +1,14 @@
+/* YouTube main-page patch.  */
+#YtKevlarVisibilityIdentifier, .ad-container, .ad-div, .masthead-ad-control, .video-ads, .ytp-ad-progress-list, #ad_creative_3, #footer-ads, #masthead-ad, #player-ads, .ytd-mealbar-promo-renderer, #watch-channel-brand-div, #watch7-sidebar-ads {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+.video-stream.html5-main-video{
+    display:none;
+}
+
+.ytp-chrome-top{
+    display:none;
+}
